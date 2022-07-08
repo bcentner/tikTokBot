@@ -1,5 +1,6 @@
 from urllib import response
 import requests
+from bs4 import BeautifulSoup
 
 # https://www.tiktok.com/foryou?is_copy_url=1&is_from_webapp=v1
 def runMe():
@@ -12,6 +13,5 @@ def runMe():
 	    exit
 
 	print(response.text)
-	jsonResponse = response.json() # fixme
-	for key, value in jsonResponse.items():
-		print(key, ":", value)
+	soup = BeautifulSoup(response.text, 'html.parser')
+	print(soup.prettify())

@@ -9,6 +9,7 @@ print(" _____ _ _  _____     _   ______       _                        \n" +
 "  \_/ |_|_|\_\_/\___/|_|\_\____/ \___/ \__|_| |_| |_|\___|_| |_|\n")
 opt = int(input("\nSelect your option: \n  1)Scrape main page\n  2)Login\n  3)FIXME...\n\n>"))
 if opt == 1:
+    print("scraping...\n")
     runMe()
 elif opt == 2:
     print("IN WORK")
